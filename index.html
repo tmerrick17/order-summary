@@ -11,7 +11,7 @@
   <!-- <link rel="stylesheet" href="css/reset.css"> -->
   <link rel="stylesheet" href="css/main.css">
   
-  <title>Frontend Mentor | Order summary card</title>
+  <title>Order summary card</title>
 
   <!-- Feel free to remove these styles or customize in your own stylesheet 👍 -->
   <style>
@@ -22,7 +22,7 @@
 <body>
 
   <!-- * Main Content -->
-  <main>
+  <main class="center-card">
 
     <!-- * Card -->
     <section class="card">
@@ -31,28 +31,35 @@
       <!-- <img class="card__hero" src="images/illustration-hero.svg" alt="Cartoon female dancing in front of city skyline"> -->
       <div class="card__hero"></div>
 
-      <!-- * Main Header -->
-      <h1 class="card__title">Order Summary</h1>
-      
-      <!-- * Description -->
-      <p class="card__description">You can now listen to millions of songs, audiobooks, and podcasts on any device anywhere you like!</p>
-      
-      <!-- * Grid Div -->
-      <div class="card__plan-area">
-        <!-- * Music symbol icon -->
-        <img src="images/icon-music.svg" alt="music symbol">
-        <!-- * Subtitle -->
-        <h2 class="card__subtitle">Annual Plan</h2>
-        <!-- * Price info -->
-        <p class="card__price">$59.99/year</p>
-        <!-- * Change Plan button -->
-        <p class="card__change-btn card__change-btn--active">Change</p>
-      </div>
+        <!-- * Card Main Content -->
+        <div class="card__main-content">
 
-      <!-- * Proceed to Payment Button -->
-      <a class="card__main-btn card__main-btn--active" href="#">Proceed to Payment</a>
-      <!-- * Cancel Order Button -->
-      <a class="card__sec-btn card__sec-btn--active" href="#">Cancel Order</a>
+        <!-- * Main Header -->
+        <h1 class="card__title">Order Summary</h1>
+        
+        <!-- * Description -->
+        <p class="card__description">You can now listen to millions of songs, audiobooks, and podcasts on any device anywhere you like!</p>
+        
+        <!-- * Grid Div -->
+        <div class="card__plan-area">
+          <!-- * Music icon -->
+          <img class="card__music-icon" src="images/icon-music.svg" alt="music symbol">
+          <!-- * Subtitle -->
+          <div class="card__plan-price-area">
+            <h2 class="card__subtitle">Annual Plan</h2>
+            <!-- * Price info -->
+            <p class="card__price">$59.99/year</p>
+          </div>
+          <!-- * Change Plan button -->
+          <a href="#" class="card__change-btn card__change-btn--active">Change</a>
+        </div>
+
+        <!-- * Proceed to Payment Button -->
+        <a class="card__main-btn card__main-btn--active" href="#">Proceed to Payment</a>
+        <!-- * Cancel Order Button -->
+        <a class="card__sec-btn card__sec-btn--active" href="#">Cancel Order</a>
+
+      </div>
 
     </section>
     <!-- * End Card -->

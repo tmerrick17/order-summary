@@ -16,6 +16,7 @@ img {
 	max-width: 100%;
 }
 
+
 /* * Color Styles */
 :root {
 	--primary__pale: hsl(225, 100%, 94%);
@@ -25,28 +26,109 @@ img {
 	--neutral__dark: hsl(223, 47%, 23%);
 }
 
-/* * Body styles */
-main {
-	display: flex;
-	justify-content: center;
-	align-items: center;
+/* * Body Styles */
+.center-card {
+	display: grid;
+	min-height: 97vh;
+	place-items: center;
+	background: url(../images/pattern-background-mobile.svg) var(--neutral__pale) center/cover no-repeat;
+	background-position-y: -400px;
 }
 
-/* * Card styles */
+/* * Card Styles */
 .card {
-	border: solid black 2px;
-	width: 350px;
-	border-radius: 9%;
+	background-color: #FFF;
+	width: 330px;
+	border-radius: 20px;
+	box-shadow: 0px 40px 50px -10px rgba(91, 117, 203, 0.3);
 }
 
 /* * Card Hero Image */
 .card__hero {
-	background: url(../images/illustration-hero.svg) center/cover no-repeat;
-	margin-bottom: 3rem;
+	background: url(../images/illustration-hero.svg) center/cover no-repeat; 
+	margin-bottom: 2rem;
+	height: 160px;
+	border-radius: 16px 16px 0 0;
+}
+
+.card__main-content {
+	padding: 0 1.5rem 2.5rem;
+	display: flex;
+	flex-direction: column;
 }
 
 .card__title {
-	font-size: 2rem;
+	color: var(--neutral__dark);
+	font-size: 1.3rem;
 	font-weight: 900;
 	text-align: center;
+	margin-bottom: 1.4rem;
 }
+
+.card__description {
+	text-align: center;
+	line-height: 1.6rem;
+	color: var(--neutral__desaturated);
+	padding: 0 .5rem 0;
+	margin-bottom: 1.5rem;	
+}
+
+/* * Annual Plan/Price Area (grid) */
+.card__plan-area {
+	background-color: var(--neutral__pale);
+	border-radius: 15px;
+	padding: .8rem;
+	display: grid;
+	grid-template-columns: 50px 120px 1fr;
+	grid-gap: 1rem;
+	align-items: center;
+	margin-bottom: 1.3rem;
+}
+
+.card__music-icon {
+	justify-content: left;
+
+	/* border: 2px solid #000; */
+}
+
+.card__plan-price-area {
+	/* border: 2px solid #000; */
+}
+
+.card__subtitle {
+	color: var(--neutral__dark);
+	font-size: 1rem;
+	font-weight: 700;
+}
+
+.card__price {
+	font-size: .9rem;
+	color: var(--neutral__desaturated);
+}
+
+.card__change-btn {
+	font-size: .8rem;
+	font-weight: 700;
+	justify-self: end;
+}
+
+/* * Payment Button Styles */
+.card__main-btn {
+	background-color: var(--primary__bright);
+	color: #FFF;
+	text-decoration: none;
+	text-align: center;
+	border-radius: 15px;
+	padding: 1rem 3rem;
+	margin-bottom: 2rem;
+}
+
+.card__sec-btn {
+	color: var(--neutral__desaturated);
+	text-decoration: none;
+	text-align: center;
+	font-weight: 700;
+	
+}
+
+
