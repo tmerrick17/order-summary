@@ -1,0 +1,52 @@
+/* * CSS Reset & Universal Styles */
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+	font-family: 'Red Hat Display', sans-serif;
+	/* width: 100vw; */
+}
+
+img {
+	max-width: 100%;
+}
+
+/* * Color Styles */
+:root {
+	--primary__pale: hsl(225, 100%, 94%);
+	--primary__bright: hsl(245, 75%, 52%);
+	--neutral__pale: hsl(225, 100%, 98%);
+	--neutral__desaturated: hsl(224, 23%, 55%);
+	--neutral__dark: hsl(223, 47%, 23%);
+}
+
+/* * Body styles */
+main {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/* * Card styles */
+.card {
+	border: solid black 2px;
+	width: 350px;
+	border-radius: 9%;
+}
+
+/* * Card Hero Image */
+.card__hero {
+	background: url(../images/illustration-hero.svg) center/cover no-repeat;
+	margin-bottom: 3rem;
+}
+
+.card__title {
+	font-size: 2rem;
+	font-weight: 900;
+	text-align: center;
+}

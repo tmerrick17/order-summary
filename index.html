@@ -5,10 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com"> 
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap" rel="stylesheet">
+  <!-- <link rel="stylesheet" href="css/reset.css"> -->
+  <link rel="stylesheet" href="css/main.css">
   
   <title>Frontend Mentor | Order summary card</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <!-- Feel free to remove these styles or customize in your own stylesheet 👍 -->
   <style>
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
@@ -16,22 +21,47 @@
 </head>
 <body>
 
-  Order Summary
+  <!-- * Main Content -->
+  <main>
 
-  You can now listen to millions of songs, audiobooks, and podcasts on any 
-  device anywhere you like!
+    <!-- * Card -->
+    <section class="card">
 
-  Annual Plan
-  $59.99/year
+      <!-- * Hero Image -->
+      <!-- <img class="card__hero" src="images/illustration-hero.svg" alt="Cartoon female dancing in front of city skyline"> -->
+      <div class="card__hero"></div>
 
-  Change
+      <!-- * Main Header -->
+      <h1 class="card__title">Order Summary</h1>
+      
+      <!-- * Description -->
+      <p class="card__description">You can now listen to millions of songs, audiobooks, and podcasts on any device anywhere you like!</p>
+      
+      <!-- * Grid Div -->
+      <div class="card__plan-area">
+        <!-- * Music symbol icon -->
+        <img src="images/icon-music.svg" alt="music symbol">
+        <!-- * Subtitle -->
+        <h2 class="card__subtitle">Annual Plan</h2>
+        <!-- * Price info -->
+        <p class="card__price">$59.99/year</p>
+        <!-- * Change Plan button -->
+        <p class="card__change-btn card__change-btn--active">Change</p>
+      </div>
 
-  Proceed to Payment
-  Cancel Order
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+      <!-- * Proceed to Payment Button -->
+      <a class="card__main-btn card__main-btn--active" href="#">Proceed to Payment</a>
+      <!-- * Cancel Order Button -->
+      <a class="card__sec-btn card__sec-btn--active" href="#">Cancel Order</a>
+
+    </section>
+    <!-- * End Card -->
+    
+  </main>
+
+  <!-- * Footer -->
+  <footer class="attribution">
+      <p>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="#">Trevor Merrick</a>.</p>         
+  </footer>
 </body>
 </html>
