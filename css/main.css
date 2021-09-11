@@ -1,3 +1,32 @@
+/* ******************** */
+/* * Table of Contents  */
+/* ******************** */
+
+/* * 1 CSS Reset & Universal Styles */
+/* * 2 Removing default outlines from browsers*/
+/* * 3 Color Styles */
+/* * 4 Mobile Viewport */
+/* * 5 Body Styles */
+/* * 6 Card Styles */
+/* * 6.1 Card Hero Image Styles */
+/* * 6.2 Card Main Content Styles*/
+/* * 6.3 Annual Plan/Price Area (Grid) Styles */
+/* * 6.4.1 Change Button Hover and Focus Styles */
+/* * 6.4.2 Change Button Added Focus Styles */
+/* * 6.5.1 Payment (Primary) Button Styles */
+/* * 6.5.2 Primary Button Hover Styles */
+/* * 6.5.3 Primary Button Focus Styles */
+/* * 6.6.1 Secondary Button Styles */
+/* * 6.6.2 Secondary Button Hover and Focus Styles */
+/* * 6.6.3 Secondary Button Added Focus Styles */
+/* * 7.1 Footer Styles */
+/* * 7.2 Footer Link Hover and Focus Styles */
+/* * 7.3 Footer Link Hover Styles */
+/* * 7.4 Footer Link Added Focus Styles */
+/* * 8 Tablet/Desktop Viewport */
+
+/* ******************** */
+
 /* * CSS Reset & Universal Styles */
 *,
 ::before,
@@ -97,7 +126,7 @@ a:focus {
 	border-radius: 15px;
 	padding: .8rem;
 	display: grid;
-	grid-template-columns: 50px 120px 1fr;
+	grid-template-columns: 50px minmax(60px, 120px) 1fr;
 	grid-gap: 1rem;
 	align-items: center;
 	margin-bottom: 1.3rem;
@@ -202,7 +231,6 @@ footer {
 	text-align: center;
 }
 
-/* * Footer Link Styles */
 .footer__link {
 	color: var(--neutral__desaturated);
 	position: relative;
