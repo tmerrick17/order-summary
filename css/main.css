@@ -9,7 +9,7 @@
 
 body {
 	font-family: 'Red Hat Display', sans-serif;
-	/* width: 100vw; */
+	background: var(--neutral__pale);
 }
 
 img {
@@ -204,7 +204,7 @@ footer {
 
 /* * Footer Link Styles */
 .footer__link {
-	color: var(--primary__fade);
+	color: var(--neutral__desaturated);
 	position: relative;
 }
 
