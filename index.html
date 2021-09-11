@@ -4,20 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
   <link rel="preconnect" href="https://fonts.googleapis.com"> 
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
   <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap" rel="stylesheet">
   <!-- <link rel="stylesheet" href="css/reset.css"> -->
   <link rel="stylesheet" href="css/main.css">
   
-  <title>Order summary card</title>
-
-  <!-- Feel free to remove these styles or customize in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <title>Order Summary Card</title>
 </head>
 <body>
 
@@ -51,13 +45,13 @@
             <p class="card__price">$59.99/year</p>
           </div>
           <!-- * Change Plan button -->
-          <a href="#" class="card__change-btn card__change-btn--active">Change</a>
+          <a href="#" class="card__change-btn">Change</a>
         </div>
 
         <!-- * Proceed to Payment Button -->
-        <a class="card__main-btn card__main-btn--active" href="#">Proceed to Payment</a>
+        <a class="card__prim-btn" href="#">Proceed to Payment</a>
         <!-- * Cancel Order Button -->
-        <a class="card__sec-btn card__sec-btn--active" href="#">Cancel Order</a>
+        <a class="card__sec-btn" href="#">Cancel Order</a>
 
       </div>
 
@@ -68,7 +62,7 @@
 
   <!-- * Footer -->
   <footer class="attribution">
-      <p>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="#">Trevor Merrick</a>.</p>         
+      <p>Challenge by <a class="footer__link" href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a class="footer__link" href="https://github.com/tmerrick17/order-summary-component-main">Trevor Merrick</a>.</p>         
   </footer>
 </body>
 </html>

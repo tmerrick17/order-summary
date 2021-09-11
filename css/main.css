@@ -16,15 +16,29 @@ img {
 	max-width: 100%;
 }
 
+/* * Removing default focus outline in browsers to add my own focus styles */
+a:focus {
+	outline: none;
+}
+
+::-moz-focus-inner {
+	border: 0;
+}
+
 
 /* * Color Styles */
 :root {
 	--primary__pale: hsl(225, 100%, 94%);
 	--primary__bright: hsl(245, 75%, 52%);
+	--primary__fade: hsl(228, 45%, 44%);
+	--primary__alt: hsl(245, 83%, 68%); 
 	--neutral__pale: hsl(225, 100%, 98%);
 	--neutral__desaturated: hsl(224, 23%, 55%);
 	--neutral__dark: hsl(223, 47%, 23%);
+	
 }
+
+/* **** Mobile Viewport ****/
 
 /* * Body Styles */
 .center-card {
@@ -32,18 +46,21 @@ img {
 	min-height: 97vh;
 	place-items: center;
 	background: url(../images/pattern-background-mobile.svg) var(--neutral__pale) center/cover no-repeat;
-	background-position-y: -400px;
+	background-position: top;
+	background-size: contain;
+
 }
 
 /* * Card Styles */
 .card {
 	background-color: #FFF;
-	width: 330px;
+	width: 80%;
+	max-width: 400px;
 	border-radius: 20px;
 	box-shadow: 0px 40px 50px -10px rgba(91, 117, 203, 0.3);
 }
 
-/* * Card Hero Image */
+/* * Card Hero Image Styles */
 .card__hero {
 	background: url(../images/illustration-hero.svg) center/cover no-repeat; 
 	margin-bottom: 2rem;
@@ -51,6 +68,7 @@ img {
 	border-radius: 16px 16px 0 0;
 }
 
+/* * Card Main Content Styles */
 .card__main-content {
 	padding: 0 1.5rem 2.5rem;
 	display: flex;
@@ -73,7 +91,7 @@ img {
 	margin-bottom: 1.5rem;	
 }
 
-/* * Annual Plan/Price Area (grid) */
+/* * Annual Plan/Price Area (Grid) Styles */
 .card__plan-area {
 	background-color: var(--neutral__pale);
 	border-radius: 15px;
@@ -87,12 +105,6 @@ img {
 
 .card__music-icon {
 	justify-content: left;
-
-	/* border: 2px solid #000; */
-}
-
-.card__plan-price-area {
-	/* border: 2px solid #000; */
 }
 
 .card__subtitle {
@@ -109,11 +121,31 @@ img {
 .card__change-btn {
 	font-size: .8rem;
 	font-weight: 700;
+	color: var(--primary__bright);
 	justify-self: end;
+	position: relative;
 }
 
-/* * Payment Button Styles */
-.card__main-btn {
+/* * Change Button Hover and Focus Styles */
+.card__change-btn:hover,
+.card__change-btn:focus {
+	text-decoration: none;
+	color: var(--primary__alt);
+}
+
+/* * Change Button Added Focus Styles */
+.card__change-btn:focus::after {
+	content: "";
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 2px;
+	background: var(--primary__alt);
+}
+
+/* * Payment (Primary) Button Styles */
+.card__prim-btn {
 	background-color: var(--primary__bright);
 	color: #FFF;
 	text-decoration: none;
@@ -121,14 +153,91 @@ img {
 	border-radius: 15px;
 	padding: 1rem 3rem;
 	margin-bottom: 2rem;
+	box-shadow: 0px 20px 30px -10px rgba(91, 117, 203, 0.5);
 }
 
+/* * Primary Button Hover Styles */
+.card__prim-btn:hover {
+	background-color: var(--primary__alt);
+}
+
+/* * Primary Button Focus Styles */
+.card__prim-btn:focus {
+	background-color: var(--primary__alt);
+	box-shadow: 
+		0 0 0 5px #FFF,
+		0 0 0 10px var(--primary__alt)
+	;
+}
+
+/* * Secondary Button Styles */
 .card__sec-btn {
 	color: var(--neutral__desaturated);
 	text-decoration: none;
 	text-align: center;
 	font-weight: 700;
-	
+	position: relative;
+}
+
+/* * Secondary Button Hover and Focus Styles */
+.card__sec-btn:hover,							
+.card__sec-btn:focus {
+	color: var(--neutral__dark);
+}
+
+/* * Secondary Button Added Focus Styles */
+.card__sec-btn:focus::after {
+	content: "";
+	position: absolute;
+	left: 91px;
+	bottom: 0;
+	width: 100px;
+	height: 2px;
+	background: var(--neutral__dark);
+}
+
+/* * Footer Styles */
+footer {
+	font-size: .7rem; 
+	text-align: center;
+}
+
+/* * Footer Link Styles */
+.footer__link {
+	color: var(--primary__fade);
+	position: relative;
+}
+
+/* * Footer Link Hover and Focus Styles */
+.footer__link:hover,
+.footer__link:focus {
+	color: var(--neutral__dark);
+}
+
+/* * Footer Link Hover Styles */
+.footer__link:hover {
+	text-decoration: none;
+}
+
+/* * Footer Link Added Focus Styles */
+.footer__link:focus::after {
+	content: "";
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 2px;
+	background: var(--neutral__dark);
 }
 
 
+/* **** Tablet/Desktop Viewport ****/
+
+@media screen and (min-width: 1440px) {
+	.center-card {
+		background: url(../images/pattern-background-desktop.svg) var(--neutral__pale) center/cover no-repeat;
+		background-position: top;
+		background-size: contain;
+	}
+
+}
