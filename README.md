@@ -28,9 +28,14 @@ Users should be able to:
 
 ![](/design/Final-Screenshot-Order-Summary-Card.png)
 
+### Links
+
+- Solution URL: [My Solution Page at Frontend Mentor](https://www.frontendmentor.io/solutions/mobile-ready-first-page-using-bem-and-accessibility-in-consideration-L8LKAFviv)
+- Live Site URL: [Live Site](https://tmerrick17.github.io/order-summary/)
+
 ## My process
 
-With the HTML provided, worked on:
+With the HTML basic content provided, worked on:
   - assigning CSS class names using the BEM method
   - creating variables in CSS for color schemes
   - adding Google Font provided
@@ -58,7 +63,7 @@ Finally worked on:
 
 ### What I learned
 
-A lot of this was review and putting in the work.  I did learn some interesting bits off CSS like using the focus state effectively and differently then the hover state.  here is an example.
+A lot of this was review and putting in the work.  I did learn some interesting bits of CSS like using the focus state effectively and differently then the hover state.  Here is an example.
 
 Using the box-shadow I was able to create an outline around a button that was pleasing to the eye and even more noticeable then just using the hover state for people who have accessability needs.
 
@@ -81,8 +86,8 @@ Also making sure my BEM method is sound with having multiple cards to see if the
 
 ### Useful resources
 
-- [Kevin Powell](https://www.youtube.com/kepowob) - I watch this guys stuff constantly.  He has one of the best consistent channels mostly concentrating on CSS.  Wonderful resource.
-- [DesignCourse](https://www.youtube.com/user/DesignCourse) - Another great resource with design tips and tricks and more CSS knowledge.
+- [Kevin Powell Youtube Channel](https://www.youtube.com/kepowob) - I watch this guys stuff constantly.  He has one of the best consistent channels mostly concentrating on CSS.  Wonderful resource.
+- [DesignCourse Youtube Channel](https://www.youtube.com/user/DesignCourse) - Another great resource with design tips and tricks and more CSS knowledge.
 
 ## Author
 

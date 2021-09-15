@@ -77,7 +77,6 @@ a:focus {
 	background: url(../images/pattern-background-mobile.svg) var(--neutral__pale) center/cover no-repeat;
 	background-position: top;
 	background-size: contain;
-
 }
 
 /* * Card Styles */
@@ -91,7 +90,7 @@ a:focus {
 
 /* * Card Hero Image Styles */
 .card__hero {
-	background: url(../images/illustration-hero.svg) center/cover no-repeat; 
+	background: url("../images/illustration-hero.svg") center/cover no-repeat; 
 	margin-bottom: 2rem;
 	height: 160px;
 	border-radius: 16px 16px 0 0;
@@ -218,9 +217,9 @@ a:focus {
 .card__sec-btn:focus::after {
 	content: "";
 	position: absolute;
-	left: 91px;
+	left: 125px;
 	bottom: 0;
-	width: 100px;
+	width: 29%;
 	height: 2px;
 	background: var(--neutral__dark);
 }
