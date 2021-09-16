@@ -93,7 +93,7 @@ Also making sure my BEM method is sound with having multiple cards to see if the
 
 - Website - [Trevor Merrick](https://trevormerrick.com)
 - LinkedIn - [@trevormerrick](https://www.linkedin.com/in/trevormerrick/)
-- GitHub - [@tmerrick17](https://github.com/tmerrick17/order-summary-component-main)
+- GitHub - [@tmerrick17](https://github.com/tmerrick17/)
 - Frontend Mentor - [@tmerrick17](https://www.frontendmentor.io/profile/tmerrick17)
 - Twitter - [@tcmerrick](https://www.twitter.com/tcmerrick)
 
