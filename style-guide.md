@@ -5,7 +5,6 @@
 The designs were created to the following widths:
 
 - Mobile: 375px
-- Tablet: 601px <!-- * added by Trevor Merrick -->
 - Desktop: 1440px
 
 ## Colors

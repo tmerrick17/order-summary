@@ -36,9 +36,13 @@
     box-sizing: border-box;
 }
 
+html {
+	font-size: 16px;
+}
+
 body {
 	font-family: 'Red Hat Display', sans-serif;
-	background: var(--neutral__pale);
+	background-color: var(--neutral--blue-fade);
 }
 
 img {
@@ -57,13 +61,13 @@ a:focus {
 
 /* * Color Styles */
 :root {
-	--primary__pale: hsl(225, 100%, 94%);
-	--primary__bright: hsl(245, 75%, 52%);
-	--primary__fade: hsl(228, 45%, 44%);
-	--primary__alt: hsl(245, 83%, 68%); 
-	--neutral__pale: hsl(225, 100%, 98%);
-	--neutral__desaturated: hsl(224, 23%, 55%);
-	--neutral__dark: hsl(223, 47%, 23%);
+	--primary--blue-pale: hsl(225, 100%, 94%);
+	--primary--blue-bright: hsl(245, 75%, 52%);
+	--primary--hover: hsl(245, 83%, 68%); 
+	--neutral--blue-pale: hsl(225, 100%, 98%);
+	--neutral--blue-desat: hsl(224, 23%, 55%);
+	--neutral--blue-fade: hsl(224, 89%, 93%);
+	--neutral--blue-dark: hsl(223, 47%, 23%);
 	
 }
 
@@ -74,7 +78,7 @@ a:focus {
 	display: grid;
 	min-height: 97vh;
 	place-items: center;
-	background: url(../images/pattern-background-mobile.svg) var(--neutral__pale) center/cover no-repeat;
+	background: url(../images/pattern-background-mobile.svg) center/cover no-repeat;
 	background-position: top;
 	background-size: contain;
 }
@@ -82,8 +86,8 @@ a:focus {
 /* * Card Styles */
 .card {
 	background-color: #FFF;
-	width: 80%;
-	max-width: 400px;
+	width: 87%;
+	max-width: 28.125rem;
 	border-radius: 20px;
 	box-shadow: 0px 40px 50px -10px rgba(91, 117, 203, 0.3);
 }
@@ -91,44 +95,45 @@ a:focus {
 /* * Card Hero Image Styles */
 .card__hero {
 	background: url("../images/illustration-hero.svg") center/cover no-repeat; 
-	margin-bottom: 2rem;
 	height: 160px;
 	border-radius: 16px 16px 0 0;
+	margin-bottom: 2rem;
 }
 
 /* * Card Main Content Styles */
 .card__main-content {
-	padding: 0 1.5rem 2.5rem;
+	padding: 0 1.5rem 2.1rem;
 	display: flex;
 	flex-direction: column;
 }
 
 .card__title {
-	color: var(--neutral__dark);
-	font-size: 1.3rem;
-	font-weight: 900;
 	text-align: center;
-	margin-bottom: 1.4rem;
+	font-size: 1.5rem;
+	font-weight: 700;
+	color: var(--neutral--blue-dark);
+	margin-bottom: 1rem;
 }
 
 .card__description {
 	text-align: center;
 	line-height: 1.6rem;
-	color: var(--neutral__desaturated);
+	font-weight: 500;
+	color: var(--neutral--blue-desat);
 	padding: 0 .5rem 0;
 	margin-bottom: 1.5rem;	
 }
 
 /* * Annual Plan/Price Area (Grid) Styles */
 .card__plan-area {
-	background-color: var(--neutral__pale);
+	background-color: var(--neutral--blue-pale);
 	border-radius: 15px;
-	padding: .8rem;
+	padding: 1.1rem;
 	display: grid;
 	grid-template-columns: 50px minmax(60px, 120px) 1fr;
 	grid-gap: 1rem;
 	align-items: center;
-	margin-bottom: 1.3rem;
+	margin-bottom: 1.5rem;
 }
 
 .card__music-icon {
@@ -136,20 +141,21 @@ a:focus {
 }
 
 .card__subtitle {
-	color: var(--neutral__dark);
 	font-size: 1rem;
-	font-weight: 700;
+	font-weight: 900;
+	color: var(--neutral--blue-dark);
 }
 
 .card__price {
-	font-size: .9rem;
-	color: var(--neutral__desaturated);
+	font-size: 1rem;
+	font-weight: 500;
+	color: var(--neutral--blue-desat);
 }
 
 .card__change-btn {
 	font-size: .8rem;
 	font-weight: 700;
-	color: var(--primary__bright);
+	color: var(--primary--blue-bright);
 	justify-self: end;
 	position: relative;
 }
@@ -158,7 +164,7 @@ a:focus {
 .card__change-btn:hover,
 .card__change-btn:focus {
 	text-decoration: none;
-	color: var(--primary__alt);
+	color: var(--primary--hover);
 }
 
 /* * Change Button Added Focus Styles */
@@ -168,60 +174,53 @@ a:focus {
 	left: 0;
 	bottom: 0;
 	width: 100%;
-	height: 2px;
-	background: var(--primary__alt);
+	height: 3px;
+	background: var(--primary--hover);
 }
 
 /* * Payment (Primary) Button Styles */
 .card__prim-btn {
-	background-color: var(--primary__bright);
+	background-color: var(--primary--blue-bright);
 	color: #FFF;
 	text-decoration: none;
 	text-align: center;
 	border-radius: 15px;
-	padding: 1rem 3rem;
-	margin-bottom: 2rem;
+	padding: 0.9rem 3rem;
 	box-shadow: 0px 20px 30px -10px rgba(91, 117, 203, 0.5);
+	margin-bottom: 1.5rem;
 }
 
 /* * Primary Button Hover Styles */
 .card__prim-btn:hover {
-	background-color: var(--primary__alt);
+	background-color: var(--primary--hover);
 }
 
 /* * Primary Button Focus Styles */
 .card__prim-btn:focus {
-	background-color: var(--primary__alt);
+	background-color: var(--primary--hover);
 	box-shadow: 
 		0 0 0 5px #FFF,
-		0 0 0 10px var(--primary__alt)
+		0 0 0 10px var(--primary--hover)
 	;
 }
 
 /* * Secondary Button Styles */
 .card__sec-btn {
-	color: var(--neutral__desaturated);
+	color: var(--neutral--blue-desat);
 	text-decoration: none;
 	text-align: center;
 	font-weight: 700;
-	position: relative;
 }
 
 /* * Secondary Button Hover and Focus Styles */
 .card__sec-btn:hover,							
 .card__sec-btn:focus {
-	color: var(--neutral__dark);
+	color: var(--neutral--blue-dark);
 }
 
 /* * Secondary Button Added Focus Styles */
-.card__sec-btn:focus::after {
-	content: "";
-	position: absolute;
-	left: 125px;
-	bottom: 0;
-	width: 29%;
-	height: 2px;
-	background: var(--neutral__dark);
+.card__sec-btn:focus {
+	outline: solid 2px var(--neutral--blue-dark);
 }
 
 /* * Footer Styles */
@@ -231,14 +230,14 @@ footer {
 }
 
 .footer__link {
-	color: var(--neutral__desaturated);
+	color: var(--neutral--blue-desat);
 	position: relative;
 }
 
 /* * Footer Link Hover and Focus Styles */
 .footer__link:hover,
 .footer__link:focus {
-	color: var(--neutral__dark);
+	color: var(--neutral--blue-dark);
 }
 
 /* * Footer Link Hover Styles */
@@ -254,17 +253,35 @@ footer {
 	bottom: 0;
 	width: 100%;
 	height: 2px;
-	background: var(--neutral__dark);
+	background: var(--neutral--blue-dark);
 }
 
 
 /* **** Tablet/Desktop Viewport ****/
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 600px) {
 	.center-card {
-		background: url(../images/pattern-background-desktop.svg) var(--neutral__pale) center/cover no-repeat;
+		background: url(../images/pattern-background-desktop.svg) center/cover no-repeat;
 		background-position: top;
 		background-size: contain;
 	}
 
+	.card__hero {
+		height: 13.75rem;
+		margin-bottom: 3.375rem;
+	}
+
+	.card__main-content {
+		padding: 0 3rem 3.375rem;
+	}
+
+	.card__plan-area {
+		padding: 1.375rem 1.5rem;
+		margin-bottom: 1.875rem;
+	}
+
+	.card__prim-btn {
+		padding-inline: 6.375rem;
+		margin-bottom: 2rem;
+	}
 }
