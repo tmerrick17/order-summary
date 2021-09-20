@@ -263,6 +263,10 @@ footer {
 /* **** Tablet/Desktop Viewport ****/
 
 @media screen and (min-width: 600px) {
+	body {
+		background-image: none;
+	}
+	
 	.center-card {
 		background: url(../images/pattern-background-desktop.svg) center/cover no-repeat;
 		background-position: top;
