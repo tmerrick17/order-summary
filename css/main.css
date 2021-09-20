@@ -81,7 +81,7 @@ body {
 .center-card {
 	display: grid;
 	place-items: center;
-	min-height: 93vh;
+	min-height: 95vh;
 	margin-top: 1.5rem;
 }
 
@@ -264,13 +264,10 @@ footer {
 
 @media screen and (min-width: 600px) {
 	body {
-		background-image: none;
-	}
-	
-	.center-card {
 		background: url(../images/pattern-background-desktop.svg) center/cover no-repeat;
 		background-position: top;
 		background-size: contain;
+		background-color: var(--neutral--blue-fade);
 	}
 
 	.card__hero {
